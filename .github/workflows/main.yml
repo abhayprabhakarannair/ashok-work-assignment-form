@@ -20,6 +20,9 @@ jobs:
         run: |
           sed -i "s|%%GOOGLE_SCRIPT_URL%%|${{ secrets.MY_GOOGLE_SCRIPT_URL }}|g" index.html
 
+      - name: Create CNAME
+        run: echo "sro-palakkad-work-assignment.pages.zenxapps.com" > CNAME
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

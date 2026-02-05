@@ -10,7 +10,7 @@
 <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
 
     <div x-data="workForm()" class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
-        <h2 class="text-2xl font-bold text-blue-600 text-center mb-1">Work Assignment</h2>
+        <h2 class="text-2xl font-bold text-blue-600 text-center mb-1">SRO Palakkad</h2>
         <p class="text-sm text-gray-500 text-center mb-6">Select your history to reveal pending items.</p>
 
         <div class="space-y-4 mb-6">
@@ -78,7 +78,7 @@
                 sections: ["TMO 1 (Day Set)", "TMO 2", "Parcel Hub 1 (Day Set)", "Parcel Hub 2", "Main office 1 (Day Set)", "Main Office 2", "ICH", "LR"],
                 years: { y22: '', y23: '', y24: '', y25: '' },
                 opt1: '', opt2: '', opt3: '',
-                scriptURL: 'https://script.google.com/macros/s/AKfycbyuqjRFYr6o4q9rO7BrY4qvLzUeGfTh1MX8fq7xukrmcf9oWKKF1Y7H24BUkPyimG5NUA/exec',
+                scriptURL: '%%GOOGLE_SCRIPT_URL%%',
 
                 getPending() {
                     let used = Object.values(this.years).filter(x => x !== '');
